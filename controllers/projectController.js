@@ -1,7 +1,7 @@
 import { actualizarHorarioEspecifico } from '../services/timekitServices.js';
 
 export async function updateProjectAvailability(req, res) {
-  console.log('Request Body:', req.body);  // Verifica el cuerpo de la solicitud
+  console.log('Request Body:', req.body);
 
   const { availability_constraints } = req.body;
   const projectId = process.env.TIMEKIT_PROJECT_ID;

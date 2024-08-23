@@ -23,11 +23,11 @@ export async function actualizarHorarioEspecifico(projectId, availabilityConstra
     console.log('Response Data:', responseData);
 
     if (response.status === 204) {
-      return { message: 'Disponibilidad actualizada correctamente' };
+      return { message: 'Availability updated correctly' };
     } else {
       throw new Error(`Código de estado ${response.status}, Respuesta: ${responseData}`);
     }
   } catch (error) {
-    throw new Error(`Error al actualizar disponibilidad: ${error.message}`);
+    throw new Error(`Error updating availability: ${error.message}`);
   }
 }
